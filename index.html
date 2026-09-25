@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Resumo de estudos do Módulo I - Primeiros Passos com HTML (DIO).">
+    <title>Módulo I - Primeiros Passos com HTML</title>
+</head>
+<body>
+
+    <!-- ===================== CABEÇALHO ===================== -->
+    <h1 id="inicio">Módulo I &ndash; Primeiros Passos com HTML</h1>
+    <hr />
+
+    <p>
+        Este site foi construído como entrega do <strong>Desafio de Projeto</strong> do
+        Módulo I da trilha de HTML da <abbr title="Digital Innovation One">DIO</abbr>.
+        Aqui eu resumo, <i>com as minhas palavras</i>, o que aprendi nas aulas práticas,
+        aplicando todas as tags estudadas.
+    </p>
+
+    <p>
+        <small>
+            <mark>Observação:</mark> as tags <font color="#a00000">&lt;font&gt;</font> e
+            <u>&lt;u&gt;</u> estão <del>em desuso</del> obsoletas no HTML5 e o correto é usar
+            <strong>CSS</strong> para aparência. Ainda assim, elas foram mantidas aqui porque
+            fazem parte do conteúdo didático deste módulo.
+        </small>
+    </p>
+
+    <hr />
+
+    <!-- ===================== ÍNDICE ===================== -->
+    <h2 id="indice">Índice</h2>
+    <p>Clique em qualquer item para ir direto ao trecho correspondente:</p>
+
+    <ul>
+        <li><a href="#historia">História dos computadores</a></li>
+        <li><a href="#clients">O que são <i>Clients</i>?</a></li>
+        <li><a href="#servers">O que são <i>Servers</i>?</a></li>
+        <li><a href="#estrutura">Como é a estrutura básica de um HTML?</a></li>
+        <li><a href="#listas">Listas ordenadas x não ordenadas</a></li>
+        <li><a href="#referencias">Links de referências</a></li>
+    </ul>
+
+    <hr />
+
+    <!-- ===================== HISTÓRIA ===================== -->
+    <h2 id="historia">História dos computadores</h2>
+
+    <p>
+        A palavra <strong>computador</strong> vem de <i>computar</i>, ou seja,
+        <mark>calcular</mark>. Antes das máquinas eletrônicas, o ser humano já criava
+        instrumentos para contar: o <abbr title="Dispositivo de contagem usado na Antiguidade">ábaco</abbr>
+        é um exemplo clássico.
+    </p>
+
+    <p>
+        A história costuma ser dividida em <strong>gerações</strong>, marcadas pela
+        tecnologia usada para processar dados:
+    </p>
+
+    <ol>
+        <li><strong>1ª geração (1940&ndash;1956):</strong> válvulas eletrônicas, como o <abbr title="Electronic Numerical Integrator and Computer">ENIAC</abbr>.</li>
+        <li><strong>2ª geração (1956&ndash;1963):</strong> substituição das válvulas pelos <i>transistores</i>.</li>
+        <li><strong>3ª geração (1964&ndash;1971):</strong> surgimento dos <i>circuitos integrados</i>.</li>
+        <li><strong>4ª geração (1971&ndash;hoje):</strong> os <i>microprocessadores</i> e os computadores pessoais.</li>
+    </ol>
+
+    <blockquote>
+        <p>
+            "A capacidade de armazenamento e a velocidade de processamento dobram a cada
+            período, enquanto o custo cai." &mdash; uma leitura informal da
+            <abbr title="Lei formulada por Gordon Moore em 1965">Lei de Moore</abbr>.
+        </p>
+    </blockquote>
+
+    <h3>Curiosidade: o primeiro "bug"</h3>
+    <p>
+        Em 1947, engenheiros encontraram uma mariposa presa dentro do computador
+        <i>Harvard Mark II</i>. O inseto foi colado no diário de bordo com a anotação
+        <mark>"first actual case of bug being found"</mark>. Daí vem o termo
+        <strong>bug</strong> para erros de software. <small>(Sim, é uma história real!)</small>
+    </p>
+
+    <h4>E o "debug"?</h4>
+    <p>
+        <del>Debugar é culpar o programador.</del> Debugar é o processo de <u>investigar e
+        corrigir</u> um defeito no código.
+    </p>
+
+    <h5>Unidades de medida</h5>
+    <p>
+        A menor unidade de informação é o <i>bit</i>. Um conjunto de 8 bits forma 1
+        <i>byte</i>. Também vale lembrar da notação científica em potências de 2:
+        2<sup>10</sup> = 1.024, então 1 KB = 1.024 bytes. Já a massa de um notebook
+        moderno gira em torno de 1,3 kg, ou seja, quase 10<sup>3</sup> gramas.
+    </p>
+
+    <h6>Detalhe químico</h6>
+    <p>
+        O silício, base dos chips, e a água (H<sub>2</sub>O) usada na fabricação de
+        semicondutores ilustram bem a relação entre <i>hardware</i> e química.
+    </p>
+
+    <p><small><a href="#indice">&uarr; Voltar ao índice</a></small></p>
+
+    <hr />
+
+    <!-- ===================== CLIENTS ===================== -->
+    <h2 id="clients">O que são <i>Clients</i>?</h2>
+
+    <p>
+        <strong>Client</strong> (cliente) é o dispositivo ou programa que <mark>solicita</mark>
+        um recurso. Quando você abre o navegador e digita um endereço, o seu computador
+        está agindo como cliente.
+    </p>
+
+    <p>Exemplos de <i>clients</i>:</p>
+
+    <ul>
+        <li><strong>Navegadores:</strong> Chrome, Firefox, Edge, Safari.</li>
+        <li><strong>Aplicativos:</strong> app de banco, Spotify, WhatsApp.</li>
+        <li><strong>Ferramentas de linha de comando:</strong> <abbr title="Uniform Resource Locator">URL</abbr> acessada via <i>cURL</i> ou <i>wget</i>.</li>
+    </ul>
+
+    <p>
+        O cliente é responsável pela <u>interface</u>: ele apresenta a informação e envia
+        os comandos do usuário para o servidor.
+    </p>
+
+    <blockquote>
+        <p>O cliente <strong>pede</strong>; o servidor <strong>responde</strong>. Guarde essa frase.</p>
+    </blockquote>
+
+    <p><small><a href="#indice">&uarr; Voltar ao índice</a></small></p>
+
+    <hr />
+
+    <!-- ===================== SERVERS ===================== -->
+    <h2 id="servers">O que são <i>Servers</i>?</h2>
+
+    <p>
+        <strong>Server</strong> (servidor) é o computador ou software que <mark>armazena</mark>
+        e <mark>entrega</mark> recursos para os clientes. Ele fica ligado 24 horas por dia,
+        7 dias por semana, esperando requisições.
+    </p>
+
+    <p>Tipos comuns de servidores:</p>
+
+    <ol>
+        <li><strong>Servidor web:</strong> entrega páginas HTML, CSS e JavaScript.</li>
+        <li><strong>Servidor de banco de dados:</strong> guarda e consulta informações.</li>
+        <li><strong>Servidor de arquivos:</strong> compartilha documentos e imagens.</li>
+        <li><strong>Servidor de e-mail:</strong> envia e recebe mensagens.</li>
+    </ol>
+
+    <h3>O ciclo requisição / resposta</h3>
+    <ol>
+        <li>O cliente envia uma <strong>requisição</strong> (ex.: <i>GET /index.html</i>).</li>
+        <li>O servidor processa o pedido.</li>
+        <li>O servidor devolve uma <strong>resposta</strong> com o conteúdo e um código de status.</li>
+        <li>O cliente renderiza o resultado na tela.</li>
+    </ol>
+
+    <p>
+        Os códigos de status mais famosos são <strong>200</strong> (sucesso) e
+        <strong>404</strong> (não encontrado). Existe também o <strong>500</strong>, que indica
+        erro interno do servidor.
+    </p>
+
+    <p><small><a href="#indice">&uarr; Voltar ao índice</a></small></p>
+
+    <hr />
+
+    <!-- ===================== ESTRUTURA HTML ===================== -->
+    <h2 id="estrutura">Como é a estrutura básica de um HTML?</h2>
+
+    <p>
+        Todo documento HTML segue um esqueleto simples. As partes principais são:
+    </p>
+
+    <ol>
+        <li><strong>&lt;!DOCTYPE html&gt;</strong> &mdash; avisa ao navegador que o documento usa HTML5.</li>
+        <li><strong>&lt;html&gt;</strong> &mdash; elemento raiz, com o atributo <i>lang</i> definindo o idioma.</li>
+        <li><strong>&lt;head&gt;</strong> &mdash; metadados: título, codificação e configurações.</li>
+        <li><strong>&lt;body&gt;</strong> &mdash; tudo o que o usuário vê na página.</li>
+    </ol>
+
+    <p>
+        A codificação <abbr title="Unicode Transformation Format - 8 bits">UTF-8</abbr> é a mais
+        recomendada, porque suporta acentuação e emojis. E o <i>viewport</i> garante que o site
+        funcione bem no celular.
+    </p>
+
+    <h3>Sobre aninhamento</h3>
+    <p>
+        As tags devem ser <u>fechadas na ordem inversa</u> em que foram abertas. Escrever
+        <mark>&lt;p&gt;&lt;strong&gt;texto&lt;/p&gt;&lt;/strong&gt;</mark> está errado; o correto é
+        <mark>&lt;p&gt;&lt;strong&gt;texto&lt;/strong&gt;&lt;/p&gt;</mark>.
+    </p>
+
+    <p><small><a href="#indice">&uarr; Voltar ao índice</a></small></p>
+
+    <hr />
+
+    <!-- ===================== LISTAS ===================== -->
+    <h2 id="listas">Entendendo a diferença entre listas ordenadas e não ordenadas</h2>
+
+    <p>
+        A diferença está no <strong>significado</strong> da lista, não apenas na aparência.
+    </p>
+
+    <h3>Lista não ordenada &mdash; &lt;ul&gt;</h3>
+    <p>
+        Usada quando a <mark>ordem não importa</mark>. Os itens aparecem com marcadores
+        (<i>bullets</i>).
+    </p>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+
+    <h3>Lista ordenada &mdash; &lt;ol&gt;</h3>
+    <p>
+        Usada quando existe uma <mark>sequência obrigatória</mark>, como um passo a passo.
+        Os itens aparecem numerados.
+    </p>
+    <ol>
+        <li>Abrir o editor de código.</li>
+        <li>Criar o arquivo <i>index.html</i>.</li>
+        <li>Escrever a estrutura básica.</li>
+        <li>Abrir o arquivo no navegador.</li>
+    </ol>
+
+    <p>
+        <small>
+            Dica: uma lista de compras é <strong>&lt;ul&gt;</strong>; uma receita de bolo é
+            <strong>&lt;ol&gt;</strong>.
+        </small>
+    </p>
+
+    <p><small><a href="#indice">&uarr; Voltar ao índice</a></small></p>
+
+    <hr />
+
+    <!-- ===================== REFERÊNCIAS ===================== -->
+    <h2 id="referencias">Links de referências</h2>
+
+    <p>
+        Materiais que usei para estudar. Todos abrem em uma <u>nova aba</u> do navegador:
+    </p>
+
+    <ul>
+        <li><a href="https://www.dio.me/" target="_blank" rel="noopener">DIO &mdash; Digital Innovation One</a></li>
+        <li><a href="https://www.w3.org/" target="_blank" rel="noopener">W3C &mdash; World Wide Web Consortium</a></li>
+        <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank" rel="noopener">MDN Web Docs &mdash; HTML</a></li>
+        <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/abbr" target="_blank" rel="noopener">MDN &mdash; elemento &lt;abbr&gt;</a></li>
+        <li><a href="https://github.com/digitalinnovationone/trilha-html-modulo-1" target="_blank" rel="noopener">Repositório original do desafio</a></li>
+    </ul>
+
+    <p><small><a href="#inicio">&uarr; Voltar ao topo</a></small></p>
+
+    <hr />
+
+    <p>
+        <small>
+            Feito com <i>&lt;3</i> durante a trilha de HTML da
+            <abbr title="Digital Innovation One">DIO</abbr> &mdash; Módulo I.
+        </small>
+    </p>
+
+</body>
+</html>
